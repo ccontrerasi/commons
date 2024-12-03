@@ -1,6 +1,6 @@
 import Foundation
 
-extension DateFormatter {
+public extension DateFormatter {
     static let dateFromServerFull: DateFormatter = {
         let formatter = DateFormatter()
         //2014-04-29T14:18:17-0400

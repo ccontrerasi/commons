@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 @available(iOS 13.0, *)
-extension Publisher {
+public extension Publisher {
     
     func flatMapLatest<T: Publisher>(_ transform: @escaping (Self.Output) -> T) -> Publishers.SwitchToLatest<T, Publishers.Map<Self, T>> where T.Failure == Self.Failure {
         map(transform).switchToLatest()

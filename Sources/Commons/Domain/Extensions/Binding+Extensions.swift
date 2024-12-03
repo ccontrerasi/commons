@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension Binding where Value: Sendable {
+public extension Binding where Value: Sendable {
     func map<T: Sendable>(get: @escaping @Sendable (Value) -> T?, set: @escaping @Sendable (T?) -> Value) -> Binding<T?> {
         return Binding<T?>(
             get: {

@@ -11,7 +11,7 @@ public enum RequestError: Error, Equatable {
     case registerNotFound
 }
 
-struct RequestErrorModel: Codable {
+public struct RequestErrorModel: Codable {
     let errorCode: Int
     let errorDes: String
     let errorUser: String

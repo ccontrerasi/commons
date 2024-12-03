@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension NSNotification.Name {
+public extension NSNotification.Name {
     static let displayErrorPopup = Notification.Name("display.error.popup")
 }
